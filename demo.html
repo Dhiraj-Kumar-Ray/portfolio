@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Adjust based on navbar height */
+        }
+
+        /* Fixed Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        /* Adjust the body content to prevent overlap with navbar */
+        body {
+            padding-top: 80px; /* Adjust based on navbar height */
+        }
+
+        /* Add padding-top to sections to prevent content overlap */
+        section {
+            padding-top: 80px; /* Adjust based on navbar height */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="p-5 bg-gray-800 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Your Name</h1>
+            <nav>
+                <ul class="flex space-x-5">
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#experience" class="hover:text-gray-400">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                    <li><a href="#resume" class="hover:text-gray-400">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center py-20">
+        <img src="images/DP2.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <h2 class="text-5xl font-extrabold">Hi, I'm <span class="text-blue-400">Your Name</span></h2>
+        <p class="text-xl mt-3">Aspiring Software Developer | Passionate about Code & Innovation</p>
+        <p class="mt-2 text-lg text-gray-400">System Engineer - Digital Profile at TCS, Pune</p>
+        <a href="#projects" class="mt-5 inline-block px-6 py-3 bg-blue-500 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="p-10 bg-gray-800">
+        <div class="container mx-auto flex flex-col md:flex-row items-center space-y-10 md:space-y-0">
+            <div class="flex-shrink-0">
+                <img src="tcs-logo.png" alt="TCS Logo" class="w-32 h-32 rounded-lg">
+            </div>
+
+            <div class="md:ml-10 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-blue-400">System Engineer - Digital Profile</h3>
+                <p class="text-lg text-gray-400">TCS, Pune | 2023 - Present</p>
+                <div class="mt-4">
+                    <h4 class="text-xl font-semibold">Key Skills:</h4>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Microservices</li>
+                        <li>Cloud Computing (AWS)</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+                <p class="mt-4 text-lg text-gray-300">
+                    In my role as a System Engineer at TCS, I have contributed to building scalable web applications using Java and Spring Boot. I have worked extensively in the digital transformation space, helping clients migrate to cloud-based solutions while leveraging microservices architecture. Additionally, I actively participate in Agile development processes to deliver high-quality software on time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="p-10 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold">About Me</h2>
+            <p class="mt-4 text-lg">I am a dedicated software developer with a strong foundation in Java, Spring Boot, and web technologies. Passionate about building scalable and efficient applications.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+                <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Project 1</h3>
+                    <p class="mt-2">Description of your project.</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Project 2</h3>
+                    <p class="mt-2">Description of your project.</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Project 3</h3>
+                    <p class="mt-2">Description of your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="p-10 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold">Resume</h2>
+            <p class="mt-4">Download my latest resume to see more details about my professional experience.</p>
+            <a href="resume.pdf" download class="mt-5 inline-block px-6 py-3 bg-blue-500 rounded-lg shadow-lg hover:bg-blue-600">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-10 bg-gray-800 text-center">
+        <h2 class="text-4xl font-semibold">Contact Me</h2>
+        <p class="mt-4">Feel free to reach out for collaborations or job opportunities.</p>
+        <a href="mailto:your.email@example.com" class="mt-5 inline-block px-6 py-3 bg-blue-500 rounded-lg shadow-lg hover:bg-blue-600">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 text-center bg-gray-900">
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
